@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharat Patel | Cybersecurity Professional</title>
+  <meta name="description" content="Portfolio of Bharat Patel - Cybersecurity Professional specializing in SOC operations, FortiSIEM, FortiSOAR, and security automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Particle Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">&lt;<span>BP</span>/&gt;</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hanging Light Bulbs -->
+  <div class="bulbs-container" id="bulbsContainer">
+    <div class="bulb-group">
+      <div class="bulb" style="--delay: 0s; --left: 8%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">0</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 0.5s; --left: 22%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">0</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 1s; --left: 38%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">0</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 0.3s; --left: 52%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">0</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 0.8s; --left: 68%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">0</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 1.2s; --left: 82%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">0</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 0.6s; --left: 92%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">0</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 0.2s; --left: 15%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">1</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 0.9s; --left: 45%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">0</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+      <div class="bulb" style="--delay: 0.4s; --left: 75%;">
+        <div class="bulb-wire"></div>
+        <div class="bulb-glass"><span class="bulb-binary">1</span></div>
+        <div class="bulb-glow"></div>
+        <div class="light-rays"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <p class="hero-greeting">// Hello, World</p>
+          <h1 class="hero-name">I'm <span>Bharat Patel</span></h1>
+          <div class="hero-typing">
+            <span id="typing-text"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-tagline">
+            Cybersecurity professional with hands-on SOC experience, specializing in SIEM/SOAR integrations, threat detection, and security automation.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-wrapper">
+            <img src="IMG_20251006_092149.jpg" alt="Bharat Patel" loading="eager">
+            <div class="hero-image-border"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-mouse"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title fade-in" data-number="01">About <span class="title-accent">Me</span></h2>
+      <div class="about-content">
+        <div class="about-text fade-in-left">
+          <p>
+            I'm a diligent cybersecurity professional with hands-on SOC experience and specialization in FortiSIEM and FortiSOAR integrations. I'm experienced in log collection, parser tuning, detection rule creation, incident triage, and automation using custom scripts.
+          </p>
+          <p>
+            I have strong practical knowledge of network security devices, endpoint protection, identity services, and PAM solutions. I'm comfortable working with cross-vendor environments and building integrations to ingest, normalize, and enrich security telemetry.
+          </p>
+          <div class="competency-tags">
+            <span class="tag">SOC Operations</span>
+            <span class="tag">Threat Hunting</span>
+            <span class="tag">SIEM Integration</span>
+            <span class="tag">SOAR Automation</span>
+            <span class="tag">Incident Response</span>
+            <span class="tag">Python Scripting</span>
+            <span class="tag">Network Security</span>
+            <span class="tag">API Integration</span>
+          </div>
+        </div>
+        <div class="about-stats fade-in-right">
+          <div class="stat-card glass-card tilt-card">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card glass-card tilt-card">
+            <span class="stat-number" data-count="30">0</span>
+            <span class="stat-label">Technologies Integrated</span>
+          </div>
+          <div class="stat-card glass-card tilt-card">
+            <span class="stat-number" data-count="9">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card glass-card tilt-card">
+            <span class="stat-number" data-count="15">0</span>
+            <span class="stat-label">Vendors Covered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title fade-in" data-number="02">My <span class="title-accent">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">Nov 2024 &mdash; Present</span>
+            <h3>Security Analyst</h3>
+            <p class="company">TechOwl Infosec</p>
+            <ul>
+              <li>Working in SOC operations focusing on FortiSIEM and FortiSOAR integration and automation</li>
+              <li>Integrated multiple security solutions including firewalls, switches, Active Directory, Trend Vision One, PAM solutions, ManageEngine, Netskope, SentinelOne, and Sophos Central into FortiSIEM</li>
+              <li>Developed and deployed custom log collection scripts (Python) for Netskope, SentinelOne, ManageEngine, and Sophos Central</li>
+              <li>Automated FortiSOAR workflows for enrichment, ticketing, and IOC correlation using APIs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">Apr 2024 &mdash; Sep 2024</span>
+            <h3>Network Engineer</h3>
+            <p class="company">Cyber Hospitality</p>
+            <ul>
+              <li>Configured and managed gateways, switches, and wireless devices across multiple properties</li>
+              <li>Monitored network health and coordinated with SOC for security events and incidents</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">Jan 2024 &mdash; Mar 2024</span>
+            <h3>SOC & VAPT Intern</h3>
+            <p class="company">Tech Defence Labs</p>
+            <ul>
+              <li>Assisted SOC workflows, performed vulnerability scanning, and contributed to threat hunting exercises using Nessus, BurpSuite, Metasploit, and Wireshark</li>
+              <li>Worked on CTF challenges to validate detection logic and response playbooks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">May 2022 &mdash; Nov 2022</span>
+            <h3>Lab Technician (Intern)</h3>
+            <p class="company">Parul University</p>
+            <ul>
+              <li>Maintained Windows lab environment, installed and deployed antivirus across domain-joined systems</li>
+              <li>Performed routine troubleshooting and system administration</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title fade-in" data-number="03">Skills & <span class="title-accent">Tools</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card fade-in tilt-card">
+          <h3>// SIEM & SOAR</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">FortiSIEM</span>
+            <span class="skill-tag">FortiSOAR</span>
+            <span class="skill-tag">Splunk</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card fade-in tilt-card">
+          <h3>// Security Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Nessus</span>
+            <span class="skill-tag">BurpSuite</span>
+            <span class="skill-tag">Nmap</span>
+            <span class="skill-tag">Metasploit</span>
+            <span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">Trend Vision One</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card fade-in tilt-card">
+          <h3>// Endpoint & Cloud Security</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SentinelOne</span>
+            <span class="skill-tag">Sophos Central</span>
+            <span class="skill-tag">Netskope</span>
+            <span class="skill-tag">ManageEngine</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card fade-in tilt-card">
+          <h3>// Scripting & Automation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Shell Scripting</span>
+            <span class="skill-tag">API Integration</span>
+            <span class="skill-tag">Regex / Parsing</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card fade-in tilt-card">
+          <h3>// Networking & Systems</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">TCP/IP</span>
+            <span class="skill-tag">DNS</span>
+            <span class="skill-tag">DHCP</span>
+            <span class="skill-tag">VLANs</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Windows Server</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card fade-in tilt-card">
+          <h3>// Identity & Access</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Active Directory</span>
+            <span class="skill-tag">PAM Solutions</span>
+            <span class="skill-tag">LDAP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Professional Highlights -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title fade-in" data-number="04">Professional <span class="title-accent">Highlights</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card fade-in tilt-card">
+          <div class="project-icon">&#128187;</div>
+          <h3>Custom Log Collection Framework</h3>
+          <p>Built Python-based log collection scripts for Netskope, SentinelOne, ManageEngine, and Sophos Central with data parsing, batching, and field normalization capabilities.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">JSON</span>
+            <span class="tag">Regex</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card fade-in tilt-card">
+          <div class="project-icon">&#9889;</div>
+          <h3>FortiSOAR Automation Workflows</h3>
+          <p>Designed and deployed automated FortiSOAR playbooks for threat enrichment, incident ticketing, and IOC correlation using custom API integrations across multiple security platforms.</p>
+          <div class="project-tags">
+            <span class="tag">FortiSOAR</span>
+            <span class="tag">Automation</span>
+            <span class="tag">Playbooks</span>
+            <span class="tag">APIs</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card fade-in tilt-card">
+          <div class="project-icon">&#127760;</div>
+          <h3>Network Infrastructure Management</h3>
+          <p>Configured and managed enterprise network infrastructure including gateways, switches, and wireless access points across multiple hospitality properties with SOC coordination.</p>
+          <div class="project-tags">
+            <span class="tag">Networking</span>
+            <span class="tag">Fortinet</span>
+            <span class="tag">Cisco</span>
+            <span class="tag">Wireless</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FortiSIEM Integration Portfolio -->
+      <div class="integration-portfolio fade-in">
+        <h3 class="integration-title"><span class="title-accent">FortiSIEM</span> Integration Portfolio</h3>
+        <p class="integration-subtitle">Technologies I can integrate into FortiSIEM via Syslog, API, CEF/LEEF, and custom collectors</p>
+
+        <div class="integration-grid">
+
+          <div class="integration-category glass-card scale-in tilt-card">
+            <h4>Operating Systems</h4>
+            <div class="integration-tags">
+              <span class="skill-tag">Windows Server (Event Logs)</span>
+              <span class="skill-tag">Windows Endpoints</span>
+              <span class="skill-tag">Sysmon</span>
+              <span class="skill-tag">Linux Servers (Syslog)</span>
+              <span class="skill-tag">RedHat / CentOS</span>
+              <span class="skill-tag">Ubuntu</span>
+            </div>
+          </div>
+
+          <div class="integration-category glass-card scale-in tilt-card">
+            <h4>Network Devices</h4>
+            <div class="integration-tags">
+              <span class="skill-tag">FortiGate</span>
+              <span class="skill-tag">Cisco ASA / FTD</span>
+              <span class="skill-tag">Palo Alto</span>
+              <span class="skill-tag">Sophos Firewall</span>
+              <span class="skill-tag">Check Point</span>
+              <span class="skill-tag">Routers</span>
+              <span class="skill-tag">Switches</span>
+              <span class="skill-tag">Load Balancers</span>
+              <span class="skill-tag">Wireless Controllers</span>
+              <span class="skill-tag">VPN Gateways</span>
+              <span class="skill-tag">IDS/IPS</span>
+            </div>
+          </div>
+
+          <div class="integration-category glass-card scale-in tilt-card">
+            <h4>Cloud Platforms</h4>
+            <div class="integration-tags">
+              <span class="skill-tag">AWS CloudTrail</span>
+              <span class="skill-tag">AWS CloudWatch</span>
+              <span class="skill-tag">AWS VPC Flow Logs</span>
+              <span class="skill-tag">AWS ELB Logs</span>
+              <span class="skill-tag">AWS GuardDuty</span>
+              <span class="skill-tag">AWS Security Hub</span>
+              <span class="skill-tag">Azure AD Logs</span>
+              <span class="skill-tag">Azure Activity Logs</span>
+              <span class="skill-tag">Google Cloud (GCP)</span>
+            </div>
+          </div>
+
+          <div class="integration-category glass-card scale-in tilt-card">
+            <h4>Endpoint Security / EDR / AV</h4>
+            <div class="integration-tags">
+              <span class="skill-tag">Trend Micro Vision One</span>
+              <span class="skill-tag">CrowdStrike Falcon</span>
+              <span class="skill-tag">Microsoft Defender</span>
+              <span class="skill-tag">Symantec EP</span>
+              <span class="skill-tag">McAfee EPO</span>
+              <span class="skill-tag">SentinelOne</span>
+            </div>
+          </div>
+
+          <div class="integration-category glass-card scale-in tilt-card">
+            <h4>Email Security</h4>
+            <div class="integration-tags">
+              <span class="skill-tag">Office 365</span>
+              <span class="skill-tag">G Suite</span>
+              <span class="skill-tag">Rediffmail</span>
+              <span class="skill-tag">Trend Micro Email Security</span>
+              <span class="skill-tag">Barracuda</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title fade-in" data-number="05"><span class="title-accent">Certifications</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#127891;</div>
+          <div class="cert-info">
+            <h4>Certified in Cybersecurity (CC)</h4>
+            <p>ISC2</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#128737;</div>
+          <div class="cert-info">
+            <h4>CompTIA Security+</h4>
+            <p>CompTIA</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#9729;&#65039;</div>
+          <div class="cert-info">
+            <h4>Google Cloud Cybersecurity Certificate</h4>
+            <p>Google</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#128274;</div>
+          <div class="cert-info">
+            <h4>Introduction to Cybersecurity</h4>
+            <p>Cisco</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#128737;</div>
+          <div class="cert-info">
+            <h4>Fortinet Certified Fundamentals</h4>
+            <p>Fortinet</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#128272;</div>
+          <div class="cert-info">
+            <h4>NSE1 & NSE2</h4>
+            <p>Fortinet</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#9729;&#65039;</div>
+          <div class="cert-info">
+            <h4>Azure Fundamentals</h4>
+            <p>Microsoft</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#127793;</div>
+          <div class="cert-info">
+            <h4>FCF - Threat Landscape 2.0</h4>
+            <p>Fortinet</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card fade-in tilt-card">
+          <div class="cert-icon">&#128179;</div>
+          <div class="cert-info">
+            <h4>Cybersecurity Job Simulation</h4>
+            <p>MasterCard</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title fade-in" data-number="06">Get In <span class="title-accent">Touch</span></h2>
+      <div class="contact-wrapper">
+
+        <div class="contact-info fade-in-left">
+          <h3>Let's Connect</h3>
+          <p>
+            I'm always open to discussing cybersecurity, new opportunities, or interesting projects. Feel free to reach out!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:bharat8511patel@gmail.com" class="contact-link">
+              <span class="link-icon">&#9993;</span>
+              bharat8511patel@gmail.com
+            </a>
+            <a href="tel:+918511850044" class="contact-link">
+              <span class="link-icon">&#128222;</span>
+              +91 8511850044
+            </a>
+            <a href="https://www.linkedin.com/in/bharat-patel-3b1822223" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="link-icon">&#128101;</span>
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card fade-in-right" action="mailto:bharat8511patel@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 <span>Bharat Patel</span>. All rights reserved.</p>
+      <p class="footer-built">Built with <span class="pulse">&#9829;</span> and lots of caffeine</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
