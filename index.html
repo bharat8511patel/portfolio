@@ -552,7 +552,11 @@
           </div>
         </div>
 
-        <form class="contact-form glass-card fade-in-right" action="mailto:bharat8511patel@gmail.com" method="post" enctype="text/plain">
+        <form class="contact-form glass-card fade-in-right" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New Portfolio Contact from Website">
+          <input type="hidden" name="from_name" value="Portfolio Contact Form">
+          <input type="checkbox" name="botcheck" style="display: none;">
           <div class="form-group">
             <input type="text" name="name" placeholder="Your Name" required>
           </div>
@@ -562,7 +566,8 @@
           <div class="form-group">
             <textarea name="message" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+          <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">Send Message</button>
+          <div id="formStatus" class="form-status"></div>
         </form>
 
       </div>

@@ -350,6 +350,44 @@ function flipBinaryDigits() {
 
 setInterval(flipBinaryDigits, 300);
 
+// ===== CONTACT FORM SUBMISSION =====
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const formStatus = document.getElementById('formStatus');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    formStatus.className = 'form-status';
+    formStatus.style.display = 'none';
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(contactForm)
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        formStatus.className = 'form-status success';
+        formStatus.textContent = 'Message sent successfully! I will get back to you soon.';
+        contactForm.reset();
+      } else {
+        formStatus.className = 'form-status error';
+        formStatus.textContent = 'Something went wrong. Please try again or email me directly.';
+      }
+    } catch (error) {
+      formStatus.className = 'form-status error';
+      formStatus.textContent = 'Network error. Please try again or email me directly.';
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+  });
+}
+
 // ===== SMOOTH SCROLL FOR ALL ANCHOR LINKS =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {

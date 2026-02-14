@@ -1263,6 +1263,33 @@ a:hover {
   align-self: flex-start;
 }
 
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-status {
+  margin-top: 15px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.form-status.success {
+  display: block;
+  background: rgba(0, 255, 200, 0.1);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.form-status.error {
+  display: block;
+  background: rgba(255, 50, 50, 0.1);
+  border: 1px solid #ff3232;
+  color: #ff3232;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   position: relative;
